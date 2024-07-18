@@ -1,24 +1,28 @@
 {
   "files": {
-    "main.css": "/LearnForeignLanguage/static/css/main.73c2c422.css",
-    "main.js": "/LearnForeignLanguage/static/js/main.1aea0425.js",
+    "main.css": "/LearnForeignLanguage/static/css/main.394126dd.css",
+    "main.js": "/LearnForeignLanguage/static/js/main.0b2f51c9.js",
     "static/css/814.27b5caf0.chunk.css": "/LearnForeignLanguage/static/css/814.27b5caf0.chunk.css",
-    "static/js/814.5df3d539.chunk.js": "/LearnForeignLanguage/static/js/814.5df3d539.chunk.js",
+    "static/js/814.0a8aedd5.chunk.js": "/LearnForeignLanguage/static/js/814.0a8aedd5.chunk.js",
     "static/css/324.27b5caf0.chunk.css": "/LearnForeignLanguage/static/css/324.27b5caf0.chunk.css",
-    "static/js/324.bfe81ddf.chunk.js": "/LearnForeignLanguage/static/js/324.bfe81ddf.chunk.js",
+    "static/js/324.cee70b5e.chunk.js": "/LearnForeignLanguage/static/js/324.cee70b5e.chunk.js",
+    "static/css/516.ed9686f8.chunk.css": "/LearnForeignLanguage/static/css/516.ed9686f8.chunk.css",
+    "static/js/516.d35fecce.chunk.js": "/LearnForeignLanguage/static/js/516.d35fecce.chunk.js",
     "static/js/535.9499ed77.chunk.js": "/LearnForeignLanguage/static/js/535.9499ed77.chunk.js",
     "static/media/image3.png": "/LearnForeignLanguage/static/media/image3.449dc4e075bd852951bc.png",
     "index.html": "/LearnForeignLanguage/index.html",
-    "main.73c2c422.css.map": "/LearnForeignLanguage/static/css/main.73c2c422.css.map",
-    "main.1aea0425.js.map": "/LearnForeignLanguage/static/js/main.1aea0425.js.map",
+    "main.394126dd.css.map": "/LearnForeignLanguage/static/css/main.394126dd.css.map",
+    "main.0b2f51c9.js.map": "/LearnForeignLanguage/static/js/main.0b2f51c9.js.map",
     "814.27b5caf0.chunk.css.map": "/LearnForeignLanguage/static/css/814.27b5caf0.chunk.css.map",
-    "814.5df3d539.chunk.js.map": "/LearnForeignLanguage/static/js/814.5df3d539.chunk.js.map",
+    "814.0a8aedd5.chunk.js.map": "/LearnForeignLanguage/static/js/814.0a8aedd5.chunk.js.map",
     "324.27b5caf0.chunk.css.map": "/LearnForeignLanguage/static/css/324.27b5caf0.chunk.css.map",
-    "324.bfe81ddf.chunk.js.map": "/LearnForeignLanguage/static/js/324.bfe81ddf.chunk.js.map",
+    "324.cee70b5e.chunk.js.map": "/LearnForeignLanguage/static/js/324.cee70b5e.chunk.js.map",
+    "516.ed9686f8.chunk.css.map": "/LearnForeignLanguage/static/css/516.ed9686f8.chunk.css.map",
+    "516.d35fecce.chunk.js.map": "/LearnForeignLanguage/static/js/516.d35fecce.chunk.js.map",
     "535.9499ed77.chunk.js.map": "/LearnForeignLanguage/static/js/535.9499ed77.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73c2c422.css",
-    "static/js/main.1aea0425.js"
+    "static/css/main.394126dd.css",
+    "static/js/main.0b2f51c9.js"
   ]
 }
