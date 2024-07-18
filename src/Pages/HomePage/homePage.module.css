@@ -1,0 +1,23 @@
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.wrapImg {
+    flex: 1;
+    display: flex;
+    max-width: 568px;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.img {
+    border-radius: 30px;
+    fill: #8a8a89;
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+    
+}
