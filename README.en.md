@@ -1,4 +1,4 @@
-# LearnLingo
+# LearnForeignLanguage
 
 This application allows you to choose a foreign language teacher to study online.
 The application consists of 3 pages:
