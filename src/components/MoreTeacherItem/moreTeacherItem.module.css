@@ -1,0 +1,31 @@
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #121417;
+    margin-bottom: 32px;
+}
+
+.listReviews {
+    list-style-type: none;
+    padding: 0;
+}
+.itemLevel {
+    margin-bottom: 32px;
+}
+
+.nameReviews {
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+color: #8a8a89;
+margin: 0 0 4px 0;
+}
+
+.comment {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #121417; 
+    margin: 16px 0 0 0;  
+}

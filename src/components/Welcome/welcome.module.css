@@ -1,0 +1,51 @@
+.wrap {
+    flex: 1;
+    border-radius: 30px;
+    max-width: 720px;
+    background: #f8f8f8;
+    padding: 98px 108px 0px 64px;
+}
+
+.title {
+    margin: 0px 0px 32px 0px;
+font-weight: 500;
+font-size: 48px;
+line-height: 117%;
+letter-spacing: -0.02em;
+color: #121417;
+}
+
+.title span {
+    font-style: italic;
+    font-weight: 400; 
+    background-color: #8a8a89;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137%;
+    letter-spacing: -0.02em;
+    color: #121417;  
+    margin: 0px 0px 64px 0px;
+}
+
+.started {
+    border-radius: 12px;
+padding: 16px 88px;
+width: 37%;
+height: 60px;
+background: #8a8a89;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.link {
+    text-decoration: none; 
+font-weight: 700;
+font-size: 18px;
+line-height: 156%;
+color: #121417;
+cursor: pointer;
+}

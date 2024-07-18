@@ -1,0 +1,156 @@
+.wrap {
+    background: #fff;
+    border-radius: 30px;
+   padding-left: 46px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #121417; 
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.text {
+  font-weight: 400;
+   font-size: 16px;
+line-height: 137%;
+color: rgba(18, 20, 23, 0.8);
+margin: 0;
+margin-bottom: 20px;
+}
+
+
+
+.wrapAvatar {
+   display: flex;
+   align-items: center;
+   gap: 14px;
+   margin-bottom: 40px;
+}
+
+.avatar {
+    border-radius: 100px;
+    width: 44px;
+   height: 44px;
+}
+
+.spanTeacher {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 133%;
+    color: #8a8a89;
+    margin-bottom: 4px;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: #121417;
+    margin: 0;
+}
+
+.titleLanguages {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+    color: #121417; 
+    margin: 0;
+    margin-bottom: 21px;
+}
+
+.form {
+        display: flex;
+        flex-direction: column;
+} 
+
+.wrapRadio {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.labelradio {
+font-weight: 400;
+font-size: 16px;
+line-height: 137%;
+color: #121417;
+display: flex;
+align-items: center;
+
+
+}
+
+.radio {
+  margin-right: 8px; 
+  box-sizing: 10px;
+  border-radius: 50%;
+  border: 1px solid #636366;
+ width: 24px;
+ height: 24px; 
+ appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    position: relative;
+    cursor: pointer; 
+    
+    
+}
+
+.radio:checked {
+  border-radius: 12px;
+  border: 3px solid #F4C550 ;
+  background-color: #fff;
+  width: 24px;
+ height: 24px;
+
+}
+
+.radio:checked::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #F4C550;;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.wrapInput {
+    display: flex;
+    flex-direction: column;  
+    margin-bottom: 40px;
+    gap: 18px;
+}
+    
+.label {
+        position: relative;  
+}
+    
+.input {
+        width: 472px;
+        border: 1px solid rgba(18, 20, 23, 0.1);
+        padding: 16px 16px 16px 18px;
+        background-color: transparent;
+        border-radius: 12px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 137%;
+        color: #121417; 
+}
+
+.span {
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+    font-size: 12px;
+    color: red;   
+}
