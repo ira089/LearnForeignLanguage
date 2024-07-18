@@ -9,7 +9,7 @@ import { BiHide } from "react-icons/bi";
 import Button from 'components/Button/Button';
 import styles from '../ModalLogIn/ModalLogIn.module.css'
 import {auth} from '../../firebase/firebase'
-// import { toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 
  const ModalRegistration = (onClose) => {
@@ -41,10 +41,10 @@ import {auth} from '../../firebase/firebase'
                   userId: user.uid,
                   token: user.accessToken,
                 }))
-                // toast.success('Congratulations! You have successfully registered!');
+                toast.success('Congratulations! You have successfully registered!');
                })
-              //  .catch(() => toast.error('Invalid user!'))
-              .catch(() => alert('Invalid user!'))
+               .catch(() => toast.error('Invalid user!'))
+              // .catch(() => alert('Invalid user!'))
                ;
                    
     reset();
