@@ -10,7 +10,7 @@ import Modal from 'components/Modal/Modal';
 import ModalBook from 'components/ModalBook/ModalBook';
 import {useAuth} from '../../redux/authSelectors';
 import {addFavorite, removeFavorite} from '../../redux/favoriteClice';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 import styles from './teacherItem.module.css'
 import { addFavoriteDataBase, removeFavoriteDataBase } from '../../firebase/apiDB';
 
@@ -30,7 +30,7 @@ import { addFavoriteDataBase, removeFavoriteDataBase } from '../../firebase/apiD
     const handleClickFavorite = async(itemId) =>  {
        
         if(!isAuth) {
-            toast.warning('This functionality is available only to authorized users!');
+            // toast.warning('This functionality is available only to authorized users!');
             return
         }
         if (isFavorite) {
