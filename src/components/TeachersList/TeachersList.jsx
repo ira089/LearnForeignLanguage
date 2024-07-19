@@ -37,7 +37,7 @@ import {db} from '../../firebase/firebase'
   useEffect(() => {
     if (initialLoad.current) {
       fetchTeachers();
-      initialLoad.current = false; // Сбрасываем флаг после первой загрузки
+      initialLoad.current = false; 
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [db]);

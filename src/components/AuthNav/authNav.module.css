@@ -14,10 +14,19 @@ color: #8a8a89;
 cursor: pointer;
   }
 
+
+
   .btnLogin span {
     margin-left: 8px;
   }
 
+   .btnRegistration:hover {
+    color: #BFD6EA;
+  }
+
+  .btnLogin:hover {
+    color: black;
+  }
 
   .btnRegistration {
     font-weight: 700;

@@ -49,3 +49,7 @@ line-height: 156%;
 color: #121417;
 cursor: pointer;
 }
+
+.link:hover {
+    color: #BFD6EA;
+}
