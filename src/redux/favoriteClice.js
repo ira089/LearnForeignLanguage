@@ -19,6 +19,10 @@ const favoriteClice = createSlice({
         setFavorites: (state, {payload}) => {
             state.favoriteTeacher = payload;
           },
+          cleaningFavorites(state){
+            state.favoriteTeacher = [];
+
+          }
     }
 });
 
@@ -33,4 +37,4 @@ const persistConfig = {
     favoriteClice.reducer
   );
 
-  export const {addFavorite, setFavorites, removeFavorite} = favoriteClice.actions
+  export const {addFavorite, setFavorites, removeFavorite, cleaningFavorites} = favoriteClice.actions

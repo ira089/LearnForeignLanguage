@@ -34,11 +34,11 @@ import { addFavoriteDataBase, removeFavoriteDataBase } from '../../firebase/apiD
             return
         }
         if (isFavorite) {
-            await removeFavoriteDataBase(userId, itemId); // Удаление из Firebase
+            await removeFavoriteDataBase(userId, itemId); 
             dispatch(removeFavorite(itemId));
            
           } else {
-            await addFavoriteDataBase(userId, itemId); // Добавление в Firebase
+            await addFavoriteDataBase(userId, itemId); 
             dispatch(addFavorite(itemId));
             
           }

@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import {useAuth} from '../../redux/authSelectors';
 import { removeUser } from '../../redux/authClice';
+import {cleaningFavorites} from '../../redux/favoriteClice'
 import { IconContext } from "react-icons";
 import { MdOutlineLogout } from "react-icons/md";
 import styles from '../AuthNav/authNav.module.css';
@@ -13,6 +14,7 @@ import styles from '../AuthNav/authNav.module.css';
     const dispatch = useDispatch();
   const handeleLogOut = () => {
     dispatch(removeUser());
+    dispatch(cleaningFavorites());
     navigate('/')
   };
   return (
