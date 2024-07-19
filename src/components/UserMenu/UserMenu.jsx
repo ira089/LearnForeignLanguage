@@ -26,9 +26,9 @@ import styles from '../AuthNav/authNav.module.css';
                 </button>
             </IconContext.Provider>
  
-            <button className={styles.btnRegistration} type='button'>
-            {email}
-            </button>
+            <div className={styles.userEmail} >
+               {email}
+            </div>
     </div>
   )
 }

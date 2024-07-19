@@ -6,7 +6,7 @@ import styles from './moreTeacherItem.module.css'
     const{ reviews, experience} = item;
   return (
     <>
-      <p> className={styles.text}{experience}</p>
+      <p className={styles.text}> {experience}</p>
       <ul className={styles.listReviews}>
            {reviews.map(review => (
             <li className={styles.itemLevel}>
