@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { IoBookOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
@@ -9,9 +9,10 @@ import Button from 'components/Button/Button';
 import Modal from 'components/Modal/Modal';
 import ModalBook from 'components/ModalBook/ModalBook';
 import {useAuth} from '../../redux/authSelectors';
-import {addFavorite, removeFavorite} from '../../redux/favoriteClice';
+import {addFavorite, removeFavorite, setFavorites} from '../../redux/favoriteClice';
 import { toast } from 'react-toastify';
-import styles from './teacherItem.module.css'
+import styles from './teacherItem.module.css';
+import {loadFavorites} from '../../firebase/apiDB';
 import { addFavoriteDataBase, removeFavoriteDataBase } from '../../firebase/apiDB';
 
 
@@ -26,20 +27,48 @@ import { addFavoriteDataBase, removeFavoriteDataBase } from '../../firebase/apiD
         const dispatch = useDispatch();
         const favorites = useSelector(selectFavorite);  
         const isFavorite = favorites[id];  
-    
+        
+
+        const [favoriteItems, setFavoriteItems] = useState([]);
+        const [togleBtnColor, setTogleBtnColor] = useState(false);
+
+        useEffect(() => {
+            const fetchData = async () => {
+                try {
+                    
+                    const favorites = await loadFavorites(userId);
+                    dispatch(setFavorites(favorites));
+                    setFavoriteItems(favorites);
+                  } catch (error) {
+                  }}
+              
+            fetchData();
+          }, [dispatch, userId]);
+
+        //   setFavoriteItems(Array.isArray(allTeachers) && Array.isArray(favoriteTeacherId) ? allTeachers.filter(item => 
+        //     favoriteTeacherId.includes(item.id)) : []) 
+
+            const isBtnColor = Array.isArray(favoriteItems) ? favoriteItems.includes(id) : false;
+
+        // const isBtnColor = favoriteItems?.includes(id);
+
+        
     const handleClickFavorite = async(itemId) =>  {
-       
+      
         if(!isAuth) {
             toast.warning('This functionality is available only to authorized users!');
             return
         }
+        
         if (isFavorite) {
             await removeFavoriteDataBase(userId, itemId); 
             dispatch(removeFavorite(itemId));
+            setTogleBtnColor(false);
            
           } else {
             await addFavoriteDataBase(userId, itemId); 
             dispatch(addFavorite(itemId));
+            setTogleBtnColor(true);
             
           }
         }
@@ -89,7 +118,7 @@ return (
                     {variant && 
                     <button className={styles.btnHeart} type='submit'
                      onClick={() => handleClickFavorite(item.id)} >
-                    {isFavorite ?  <FaHeart size={24} color=' #f4c550'/> :  <FaRegHeart size={24}/>}
+                    {isBtnColor || togleBtnColor ?  <FaHeart size={24} color=' #f4c550'/> :  <FaRegHeart size={24}/>}
                     </button> }
                 </div>
             </div>

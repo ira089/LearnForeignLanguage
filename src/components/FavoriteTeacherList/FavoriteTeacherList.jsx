@@ -40,6 +40,7 @@ import {handleLogin, loadItems, loadFavorites} from '../../firebase/apiDB';
                 
                 const favorites = await loadFavorites(userId);
                 dispatch(setFavorites(favorites));
+                setFavoriteItems(favorites);
               } catch (error) {
               }}
           
