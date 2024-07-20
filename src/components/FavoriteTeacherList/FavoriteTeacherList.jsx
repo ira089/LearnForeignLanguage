@@ -90,7 +90,7 @@ import {handleLogin, loadItems, loadFavorites} from '../../firebase/apiDB';
   
     return (
       <div className={styles.wraplist}>
-          {isItems && <ul >{elements}</ul>}
+          {isItems ? <ul >{elements}</ul> : <p>Sorry, you don't have any selected teachers.</p>}
           {!allItemsLoaded && 
             <div className={styles.bntLoad}>
                <Button type='button' onClick={loadMoreTeachers}>Load More</Button>

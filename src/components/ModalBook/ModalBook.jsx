@@ -20,11 +20,12 @@ import styles from './modalBook.module.css'
             };
       
             const isValid = await shema.schemaBook.isValid(formData);            
-    
-              if (!isValid) {
+    console.log(isValid)
+              if (isValid) {
                 return;
                }
         reset();
+        onClose()
       }
     
       const {register, handleSubmit, reset, formState:{errors, isValid}  } = useForm({
@@ -36,7 +37,7 @@ import styles from './modalBook.module.css'
         mode: "onBlur",
         resolver:yupResolver(shema.schemaBook)
       })
-    
+     
   return (
     <div className={styles.wrap}>
         <h2 className={styles.title}>Book trial lesson</h2>
@@ -128,7 +129,7 @@ import styles from './modalBook.module.css'
                 </label>
             </div>
 
-            <Button type='submit' disabled={!isValid} onClick={onClose}>Book</Button>
+            <Button type='submit' disabled={!isValid}>Book</Button>
         
         </form>
   </div>

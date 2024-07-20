@@ -5,6 +5,7 @@
   }
 
   .btnLogin {
+    display: flex;
     border: none;
     background-color: transparent;
 font-weight: 700;

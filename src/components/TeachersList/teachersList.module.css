@@ -1,5 +1,6 @@
 .wraplist {
     background: #f8f8f8;
+    overflow: auto;
 }
 
 .bntLoad {
