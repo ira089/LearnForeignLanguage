@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/LearnForeignLanguage/static/css/main.bd0b0aae.css",
-    "main.js": "/LearnForeignLanguage/static/js/main.844331db.js",
-    "static/css/814.613acdb5.chunk.css": "/LearnForeignLanguage/static/css/814.613acdb5.chunk.css",
+    "main.js": "/LearnForeignLanguage/static/js/main.8fd85b11.js",
+    "static/css/814.0cd6652c.chunk.css": "/LearnForeignLanguage/static/css/814.0cd6652c.chunk.css",
     "static/js/814.8023ca09.chunk.js": "/LearnForeignLanguage/static/js/814.8023ca09.chunk.js",
-    "static/css/324.613acdb5.chunk.css": "/LearnForeignLanguage/static/css/324.613acdb5.chunk.css",
+    "static/css/324.0cd6652c.chunk.css": "/LearnForeignLanguage/static/css/324.0cd6652c.chunk.css",
     "static/js/324.de6c5cb2.chunk.js": "/LearnForeignLanguage/static/js/324.de6c5cb2.chunk.js",
     "static/css/516.efb1b1f2.chunk.css": "/LearnForeignLanguage/static/css/516.efb1b1f2.chunk.css",
     "static/js/516.d35fecce.chunk.js": "/LearnForeignLanguage/static/js/516.d35fecce.chunk.js",
@@ -12,10 +12,10 @@
     "static/media/image3.png": "/LearnForeignLanguage/static/media/image3.449dc4e075bd852951bc.png",
     "index.html": "/LearnForeignLanguage/index.html",
     "main.bd0b0aae.css.map": "/LearnForeignLanguage/static/css/main.bd0b0aae.css.map",
-    "main.844331db.js.map": "/LearnForeignLanguage/static/js/main.844331db.js.map",
-    "814.613acdb5.chunk.css.map": "/LearnForeignLanguage/static/css/814.613acdb5.chunk.css.map",
+    "main.8fd85b11.js.map": "/LearnForeignLanguage/static/js/main.8fd85b11.js.map",
+    "814.0cd6652c.chunk.css.map": "/LearnForeignLanguage/static/css/814.0cd6652c.chunk.css.map",
     "814.8023ca09.chunk.js.map": "/LearnForeignLanguage/static/js/814.8023ca09.chunk.js.map",
-    "324.613acdb5.chunk.css.map": "/LearnForeignLanguage/static/css/324.613acdb5.chunk.css.map",
+    "324.0cd6652c.chunk.css.map": "/LearnForeignLanguage/static/css/324.0cd6652c.chunk.css.map",
     "324.de6c5cb2.chunk.js.map": "/LearnForeignLanguage/static/js/324.de6c5cb2.chunk.js.map",
     "516.efb1b1f2.chunk.css.map": "/LearnForeignLanguage/static/css/516.efb1b1f2.chunk.css.map",
     "516.d35fecce.chunk.js.map": "/LearnForeignLanguage/static/js/516.d35fecce.chunk.js.map",
@@ -23,6 +23,6 @@
   },
   "entrypoints": [
     "static/css/main.bd0b0aae.css",
-    "static/js/main.844331db.js"
+    "static/js/main.8fd85b11.js"
   ]
 }
