@@ -62,7 +62,7 @@ import {db} from '../../firebase/firebase'
   return (
     <div className={styles.wraplist}>
       {loading && <p>Loading...</p>}
-      {isItems && <ul >{elements}</ul>}
+      {isItems && <ul className={styles.list} >{elements}</ul>}
       {!loading && lastKey && 
       <div className={styles.bntLoad}>
          <Button type='button' onClick={loadMoreTeachers}>Load More</Button>

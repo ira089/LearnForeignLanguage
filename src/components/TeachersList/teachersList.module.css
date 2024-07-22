@@ -3,6 +3,10 @@
     overflow: auto;
 }
 
+.list {
+    padding: 0;
+}
+
 .bntLoad {
     display: flex;
     justify-content: center;

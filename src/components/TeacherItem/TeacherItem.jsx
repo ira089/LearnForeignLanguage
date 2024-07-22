@@ -45,13 +45,7 @@ import { addFavoriteDataBase, removeFavoriteDataBase } from '../../firebase/apiD
             fetchData();
           }, [dispatch, userId]);
 
-        //   setFavoriteItems(Array.isArray(allTeachers) && Array.isArray(favoriteTeacherId) ? allTeachers.filter(item => 
-        //     favoriteTeacherId.includes(item.id)) : []) 
-
-            const isBtnColor = Array.isArray(favoriteItems) ? favoriteItems.includes(id) : false;
-
-        // const isBtnColor = favoriteItems?.includes(id);
-
+    const isBtnColor = Array.isArray(favoriteItems) ? favoriteItems.includes(id) : false;
         
     const handleClickFavorite = async(itemId) =>  {
       
@@ -89,7 +83,7 @@ import { addFavoriteDataBase, removeFavoriteDataBase } from '../../firebase/apiD
 return (
 <>
     <li key={id} id={id} className={styles.wrapItem}>
-        <div className={styles.wrapAvatar}>
+    <div className={styles.wrapAvatar}>
             <img className={styles.avatar} alt={name} src={avatar_url}/>
         </div>
 
