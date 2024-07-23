@@ -1,8 +1,10 @@
 .wrap {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 24px;
+    gap: 24;
 }
 
 .wrapImg {
@@ -11,6 +13,9 @@
     max-width: 568px;
     justify-content: center;
     border-radius: 30px;
+    order: 1;
+    max-height: 530px;
+    min-width: 320px;
 }
 
 .img {
@@ -18,6 +23,15 @@
     fill: #8a8a89;
     width: 100%; 
     height: auto;
-    object-fit: cover;
-    
+    object-fit: cover; 
+}
+
+@media (min-width: 768px) {
+    .wrap {
+        flex-wrap: nowrap;
+    } 
+
+    .wrapImg {
+       order: 2;
+    }
 }
