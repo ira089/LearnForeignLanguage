@@ -1,6 +1,5 @@
 .wrap {
     padding-left: 48px;
-    border: 1px solid red;
 }
 
 .title {
@@ -21,7 +20,7 @@ color: rgba(18, 20, 23, 0.8);
 .form {
     display: flex;
     flex-direction: column;
-    gap: 18px;  
+    gap: 18px; 
 }
 
 .label {
@@ -29,7 +28,7 @@ color: rgba(18, 20, 23, 0.8);
 }
 
 .input {
-    width: 438px;
+    width: 100%;
     padding: 16px 16px 16px 18px;
     background-color: transparent;
     border: transparent;
@@ -38,6 +37,7 @@ color: rgba(18, 20, 23, 0.8);
     font-size: 16px;
     line-height: 137%;
     color: #121417; 
+    box-sizing: border-box;
 }
 
 

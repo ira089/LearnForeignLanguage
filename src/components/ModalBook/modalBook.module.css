@@ -136,7 +136,7 @@ align-items: center;
 }
     
 .input {
-        width: 472px;
+        width: 100%;
         border: 1px solid rgba(18, 20, 23, 0.1);
         padding: 16px 16px 16px 18px;
         background-color: transparent;
@@ -145,6 +145,7 @@ align-items: center;
         font-size: 16px;
         line-height: 137%;
         color: #121417; 
+        box-sizing: border-box;
 }
 
 .span {
