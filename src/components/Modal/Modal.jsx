@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 import styles from './modal.module.css';
 import { RxCross2 } from "react-icons/rx";
 
-    const Modal = ({ isOpen, onClose, children, width, height  }) => { 
+    const Modal = ({ isOpen, onClose, children, height  }) => { 
   const modalRoot = document.getElementById('modal-root');
 
   useEffect(() => {
@@ -19,7 +19,7 @@ import { RxCross2 } from "react-icons/rx";
   
   return createPortal(
     <div> 
-      <div className={styles.modalContent} width={width}  height={height}>
+      <div className={styles.modalContent}   height={height}>
            <button className={styles.btnClose} aria-label="Close modal" type='button'onClick={onClose}>
               <RxCross2 size={32}/>
 

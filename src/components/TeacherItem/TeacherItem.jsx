@@ -137,7 +137,7 @@ return (
             </div>}
         </div>
     </li>
-    <Modal isOpen={isModalOpen} onClose={closeModal} width={600} height={972}>
+    <Modal isOpen={isModalOpen} onClose={closeModal}  height={972}>
         <ModalBook onClose={closeModal} item={item}/>
     </Modal>
 </>

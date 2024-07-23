@@ -35,13 +35,13 @@ import styles from './authNav.module.css';
         </div>
 
         {modalType === 'login' && (
-           <Modal isOpen={isModalOpen} onClose={closeModal} width={566} height={506}>
+           <Modal isOpen={isModalOpen} onClose={closeModal}  height={506}>
              <ModalLoginIn onClose={closeModal}/>
            </Modal>
         )}
 
         {modalType === 'register' && (
-            <Modal isOpen={isModalOpen} onClose={closeModal} width={566} height={600}>
+            <Modal isOpen={isModalOpen} onClose={closeModal}  height={600}>
               <ModalRegistration onClose={closeModal}/>
             </Modal>
         )}

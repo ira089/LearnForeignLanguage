@@ -1,5 +1,6 @@
 .wrap {
     padding-left: 48px;
+    border: 1px solid red;
 }
 
 .title {
